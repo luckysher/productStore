@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  {% load static %}
+  <link rel="stylesheet" href="{% static "css/app.css" %}"></link>
+
+  <title>{% block title %}Product Store{% endblock %}</title>
+</head>
+<body>
+
+<!-- Header -->
+{% include 'frontend/block/header.html' %}
+<!-- Header end -->
+
+<!--Body start -->
+{% block body %}
+
+<h1>Body</h1>
+
+{% endblock %}
+
+<!--Body end -->
+
+<!-- Footer -->
+{% include 'frontend/block/footer.html' %}
+<!-- Footer end -->
+
+</body>
+
+<!-- static files start -->
+{% block staticfiles %}
+{% endblock %}
+
+<!-- static files end -->
+
+</html>
