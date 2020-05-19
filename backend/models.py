@@ -51,6 +51,12 @@ class Product(models.Model):
     name = models.CharField(max_length=50, null=False,
                             verbose_name='product Name',
                             help_text="Name of the product")
+
+    image = models.ImageField(verbose_name="Product Image",
+                              null=False,
+                              unique=False,
+                              help_text="Product Image")
+
     details = models.CharField(max_length=50, null=False,
                                verbose_name='Product Detail',
                                help_text="Details of the product")
@@ -72,14 +78,16 @@ class Product(models.Model):
 
     def __str__(self):
         return """Product(id={id}, name={name}, details={details}, cost={cost}, discount_amount={discount}, 
-        discount_type={discount_type}, discount_percent={discount_percent})""".format(
+        discount_type={discount_type}, discount_percent={discount_percent}, image={image})""".format(
             id=self.id,
             details=self.details,
             cost=self.cost,
             name=self.name,
             discount=self.discount,
             discount_type=self.discount_type,
-            discount_percent=self.percent)
+            discount_percent=self.percent,
+            image=self.image
+        )
 
     class meta:
         db_table = 'product'
