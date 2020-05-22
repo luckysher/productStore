@@ -53,3 +53,25 @@ ul > li {
     border-right: 1px solid #3e3737;
     padding: 0px 10px 0px 9px;
 }
+
+/* Margins */
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-0{
+    margin-bottom: 0px;
+}
+.heading{
+    position: absolute;
+    z-index: 10;
+    top: 45%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.carousel.slide > ol > li{
+    background: #0b0b0b;
+}
+.carousel-inner > div > h1 {
+    color:#fff;
+    font-size: 70px;
+}
