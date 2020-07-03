@@ -3,10 +3,10 @@
     border-radius: 0;
 }
 .jumbotron > div > h1{
-    color: #eea1a1;
+    color: #352e2e;
 }
 .jumbotron > div > p{
-    color: #eea1a1;
+    color: #352e2e;
 }
 .jumbotron {
     margin-bottom: 0;
@@ -85,23 +85,19 @@ ul{
     color:#fff;
     font-size: 70px;
 }
-
-.arrow-left {
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-right: 15px solid #f8b6a9;
-    border-bottom: 8px solid transparent;
-    float: left;
-}
 .arrow-right {
-    padding: 0px 6px 1px 10px;
-    background: #f8b6a9;
+    padding: 8px 20px 8px 20px;
+    border-radius: 3px;
+    background: #ffa353;
     float: left;
-    font-size: 12px;
+    font-size: 10px;
+    box-shadow: 1px 2px 8px #756f6f;
 }
 .nav > li {
     margin-right: 11px;
+}
+.arrow-right:hover {
+    box-shadow: 1px 2px 8px black;
 }
 .arrow-right > a {
     color: #fff;
@@ -125,29 +121,34 @@ li.dropdown:hover ul.dropdown-menu:hover li.dropdown:hover ul.dropdown-menu:hove
     display:none;
     top: -10px;
     left:0px;
+    font-size: 10px;
 }
 .dropdown .dropdown-menu .dropdown .dropdown-menu,
 li.dropdown:hover ul.dropdown-menu:hover li.dropdown ul.dropdown-menu,
 li.dropdown:hover ul.dropdown-menu:hover li.dropdown ul.dropdown-menu li.dropdown ul.dropdown-menu{
     top: 0px;
     left:150px;
+    font-size: 10px;
 }
 li.dropdown:hover ul.dropdown-menu:hover li.dropdown:hover ul.dropdown-menu:hover li.dropdown:hover ul.dropdown-menu,
 li.dropdown:hover ul.dropdown-menu:hover li.dropdown:hover ul.dropdown-menu:hover li.dropdown:hover ul.dropdown-menu /*li.dropdown /*ul.dropdown-menu*/{
     top: -8px;
     left:180px;
+    font-size: 10px;
 }
 
 li.dropdown:hover ul.dropdown-menu:hover li.dropdown:hover ul.dropdown-menu:hover li.dropdown:hover ul.dropdown-menu:hover li.dropdown:hover ul.dropdown-menu{
     top: -8px;
     left:155px;
+    font-size: 10px;
 }
 
 .dropdown-menu{
     position: absolute;
 }
 .dropdown-menu:hover {
-    top: 20px;
+    top: 35px;
+
 }
 
 li.dropdown:hover ul.dropdown-menu,
@@ -165,8 +166,14 @@ li.dropdown:hover ul.dropdown-menu:hover li.dropdown:hover ul.dropdown-menu:hove
     top: 20px;
     transition: left .5s ease-in-out;
 }
-
-
+.product-link{
+    color: black;
+    text-decoration: none;
+}
+a.product-link:hover{
+    color: black;
+    text-decoration: none;
+}
 /*
 @media screen and (max-width: 600px) {
   .column {
